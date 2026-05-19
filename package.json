@@ -1,0 +1,73 @@
+{
+  "name": "cherry-social",
+  "version": "1.0.0",
+  "description": "Cherry-Social — The Developer Social Platform for Code, Collaboration & Innovation. Built by Cherry Computer Ltd.",
+  "private": true,
+  "homepage": "https://infinite-networker.github.io/Cherry-Social",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Infinite-Networker/Cherry-Social.git"
+  },
+  "author": {
+    "name": "Cherry Computer Ltd.",
+    "url": "https://github.com/Infinite-Networker"
+  },
+  "license": "MIT",
+  "keywords": [
+    "social-platform",
+    "developer-tools",
+    "code-sharing",
+    "open-source",
+    "collaboration",
+    "cherry-social",
+    "cherry-computer"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write 'src/**/*.{ts,tsx,css}'",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "ts-node prisma/seed.ts",
+    "db:studio": "prisma studio",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "react-query": "^3.39.3",
+    "zustand": "^4.5.1",
+    "axios": "^1.6.7",
+    "socket.io-client": "^4.7.4",
+    "@prisma/client": "^5.10.0",
+    "graphql": "^16.8.1",
+    "highlight.js": "^11.9.0",
+    "date-fns": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "prisma": "^5.10.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

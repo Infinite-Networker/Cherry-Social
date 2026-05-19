@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cherry-Social — Developer Social Platform</title>
+  <meta name="description" content="Cherry-Social is a sleek, developer-focused social platform designed for collaboration and innovation. Built by Cherry Computer Ltd." />
+  <meta name="author" content="Cherry Computer Ltd." />
+  <meta property="og:title" content="Cherry-Social" />
+  <meta property="og:description" content="The Developer Social Platform for Code, Collaboration & Innovation" />
+  <meta property="og:image" content="assets/images/cherry-social-banner.png" />
+  <link rel="icon" type="image/png" href="assets/images/cherry-social-logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Animated Background Particles -->
+  <div class="bg-particles" id="particles"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/images/cherry-social-logo.png" alt="Cherry-Social Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Cherry<span class="accent">Social</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://github.com/Infinite-Networker/Cherry-Social" target="_blank" class="btn btn-ghost">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="#get-started" class="btn btn-primary">Get Started</a>
+      </div>
+      <button class="nav-toggle" id="navToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-circle-dot pulse-dot"></i>
+        Now Live — Join the Beta
+      </div>
+      <div class="hero-logo-wrap">
+        <img src="assets/images/cherry-social-logo.png" alt="Cherry-Social" class="hero-logo" />
+      </div>
+      <h1 class="hero-title">
+        <span class="gradient-text">Cherry-Social</span>
+      </h1>
+      <p class="hero-tagline">The Developer Social Platform for</p>
+      <div class="hero-typewriter">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-description">
+        A sleek, modern social platform where developers connect, collaborate, share code snippets,
+        and push innovation forward. Built for the community, by the community.
+      </p>
+
+      <!-- Badges Row -->
+      <div class="badges-row">
+        <img src="https://img.shields.io/badge/Version-1.0.0-dc143c?style=for-the-badge&logo=github&logoColor=white" alt="Version" />
+        <img src="https://img.shields.io/badge/Status-Active-22c55e?style=for-the-badge&logo=statuspage&logoColor=white" alt="Status" />
+        <img src="https://img.shields.io/badge/License-MIT-a855f7?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License" />
+        <img src="https://img.shields.io/badge/Platform-Web-3b82f6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Platform" />
+        <img src="https://img.shields.io/badge/Made_by-Cherry_Computer_Ltd.-dc143c?style=for-the-badge&logo=cherry&logoColor=white" alt="Made by Cherry Computer Ltd." />
+      </div>
+
+      <div class="hero-cta">
+        <a href="https://github.com/Infinite-Networker/Cherry-Social" target="_blank" class="btn btn-primary btn-lg">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+        <a href="#features" class="btn btn-outline btn-lg">
+          <i class="fas fa-rocket"></i> Explore Features
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="12400">0</span>
+          <span class="stat-label">Developers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="38700">0</span>
+          <span class="stat-label">Code Snippets</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5200">0</span>
+          <span class="stat-label">Projects Shared</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="99">0</span>
+          <span class="stat-label">% Uptime</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Built for <span class="gradient-text">Developers</span></h2>
+        <p class="section-desc">Everything you need to collaborate, share, and grow as a developer in one elegant platform.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card feature-card--highlight">
+          <div class="feature-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Code Snippet Sharing</h3>
+          <p>Share, highlight, and comment on code snippets with full syntax highlighting for 100+ languages. Never lose a useful snippet again.</p>
+          <div class="feature-tags">
+            <span class="tag">Syntax Highlight</span>
+            <span class="tag">100+ Languages</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Developer Profiles</h3>
+          <p>Showcase your skills, portfolio, pinned projects, and tech stack with beautifully crafted developer profile pages.</p>
+          <div class="feature-tags">
+            <span class="tag">Portfolio</span>
+            <span class="tag">Skill Tags</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3>Technical Discussions</h3>
+          <p>Engage in focused, high-signal technical discussions. No noise — only developer-relevant conversations that matter.</p>
+          <div class="feature-tags">
+            <span class="tag">Forums</span>
+            <span class="tag">Threads</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3>Project Showcase</h3>
+          <p>Present your projects with live demos, screenshots, tech stack badges, and detailed breakdowns for the community to explore.</p>
+          <div class="feature-tags">
+            <span class="tag">Live Demo</span>
+            <span class="tag">Gallery</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <h3>Privacy First</h3>
+          <p>End-to-end encrypted messages, granular privacy controls, and zero third-party data selling. Your data stays yours.</p>
+          <div class="feature-tags">
+            <span class="tag">E2E Encrypted</span>
+            <span class="tag">GDPR</span>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-plug"></i>
+          </div>
+          <h3>GitHub Integration</h3>
+          <p>Seamlessly link your GitHub account, auto-import repositories, and display real-time contribution graphs on your profile.</p>
+          <div class="feature-tags">
+            <span class="tag">OAuth</span>
+            <span class="tag">Webhooks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Section -->
+  <section class="banner-section">
+    <div class="banner-inner">
+      <img src="assets/images/cherry-social-banner.png" alt="Cherry-Social Banner" class="banner-img" />
+      <div class="banner-overlay">
+        <h2>Connect. Code. Create.</h2>
+        <p>Join thousands of developers already on Cherry-Social</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="tech-stack" id="tech">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technology</span>
+        <h2 class="section-title">Our <span class="gradient-text">Tech Stack</span></h2>
+        <p class="section-desc">Built with modern, battle-tested technologies for performance, scalability and developer happiness.</p>
+      </div>
+      <div class="tech-badges">
+        <div class="tech-category">
+          <h4>Frontend</h4>
+          <div class="tech-items">
+            <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+            <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+            <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+            <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Backend</h4>
+          <div class="tech-items">
+            <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+            <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+            <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL" />
+            <img src="https://img.shields.io/badge/WebSockets-010101?style=for-the-badge&logo=socket.io&logoColor=white" alt="WebSockets" />
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>Database & Cloud</h4>
+          <div class="tech-items">
+            <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+            <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
+            <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
+            <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4>DevOps & Tools</h4>
+          <div class="tech-items">
+            <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+            <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
+            <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white" alt="Jest" />
+            <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section class="community" id="community">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Community</span>
+        <h2 class="section-title">Join the <span class="gradient-text">Community</span></h2>
+        <p class="section-desc">Cherry-Social is open source. Contributions, feedback, and bug reports are always welcome!</p>
+      </div>
+      <div class="community-grid">
+        <a href="https://github.com/Infinite-Networker/Cherry-Social" target="_blank" class="community-card">
+          <i class="fab fa-github community-icon"></i>
+          <h3>GitHub Repository</h3>
+          <p>Star, fork, and contribute to the open source codebase.</p>
+          <span class="community-link">Visit Repo <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="https://github.com/Infinite-Networker/Cherry-Social/issues" target="_blank" class="community-card">
+          <i class="fas fa-bug community-icon"></i>
+          <h3>Report an Issue</h3>
+          <p>Found a bug? Open an issue and help us improve Cherry-Social.</p>
+          <span class="community-link">Open Issue <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="https://github.com/Infinite-Networker/Cherry-Social/discussions" target="_blank" class="community-card">
+          <i class="fas fa-comments community-icon"></i>
+          <h3>Discussions</h3>
+          <p>Propose features, ask questions, and connect with contributors.</p>
+          <span class="community-link">Join Discussion <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="https://github.com/Infinite-Networker/Cherry-Social/blob/main/CONTRIBUTING.md" target="_blank" class="community-card">
+          <i class="fas fa-code-pull-request community-icon"></i>
+          <h3>Contribute</h3>
+          <p>Read our contributing guide and submit your first pull request.</p>
+          <span class="community-link">Get Involved <i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+      <!-- GitHub Contribution Badges -->
+      <div class="contribution-badges">
+        <img src="https://img.shields.io/github/stars/Infinite-Networker/Cherry-Social?style=for-the-badge&logo=github&color=dc143c&labelColor=0d1117" alt="Stars" />
+        <img src="https://img.shields.io/github/forks/Infinite-Networker/Cherry-Social?style=for-the-badge&logo=github&color=a855f7&labelColor=0d1117" alt="Forks" />
+        <img src="https://img.shields.io/github/issues/Infinite-Networker/Cherry-Social?style=for-the-badge&logo=github&color=3b82f6&labelColor=0d1117" alt="Issues" />
+        <img src="https://img.shields.io/github/license/Infinite-Networker/Cherry-Social?style=for-the-badge&logo=opensourceinitiative&color=22c55e&labelColor=0d1117" alt="License" />
+        <img src="https://img.shields.io/badge/PRs-Welcome-ff6b9d?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="PRs Welcome" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Started Section -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Quick Start</span>
+        <h2 class="section-title">Get <span class="gradient-text">Started</span></h2>
+        <p class="section-desc">Set up Cherry-Social locally in under 5 minutes.</p>
+      </div>
+      <div class="code-steps">
+        <div class="code-step">
+          <div class="step-number">01</div>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">bash</span>
+              <button class="copy-btn" onclick="copyCode(this)"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+            <pre><code><span class="code-comment"># Clone the repository</span>
+git clone https://github.com/Infinite-Networker/Cherry-Social.git
+cd Cherry-Social</code></pre>
+          </div>
+        </div>
+        <div class="code-step">
+          <div class="step-number">02</div>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">bash</span>
+              <button class="copy-btn" onclick="copyCode(this)"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+            <pre><code><span class="code-comment"># Install dependencies</span>
+npm install
+
+<span class="code-comment"># Copy environment config</span>
+cp .env.example .env</code></pre>
+          </div>
+        </div>
+        <div class="code-step">
+          <div class="step-number">03</div>
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-lang">bash</span>
+              <button class="copy-btn" onclick="copyCode(this)"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+            <pre><code><span class="code-comment"># Start development server</span>
+npm run dev
+
+<span class="code-comment"># Visit http://localhost:3000</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Creator Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">Built by <span class="gradient-text">Cherry Computer Ltd.</span></h2>
+          <p>Cherry-Social is a flagship product of <strong>Cherry Computer Ltd.</strong>, a technology company dedicated to building elegant, developer-centric tools and platforms that empower the next generation of software engineers.</p>
+          <p>Our mission is to create spaces where developers can truly thrive — share their work, grow their skills, and build meaningful connections across the global tech community.</p>
+          <div class="about-badges">
+            <img src="https://img.shields.io/badge/Cherry_Computer_Ltd.-Creators-dc143c?style=for-the-badge&logo=cherry&logoColor=white" alt="Cherry Computer Ltd." />
+            <img src="https://img.shields.io/badge/Est.-2024-a855f7?style=for-the-badge" alt="Est. 2024" />
+            <img src="https://img.shields.io/badge/Open_Source-❤️-ff6b9d?style=for-the-badge" alt="Open Source" />
+          </div>
+          <div class="about-links">
+            <a href="https://github.com/Infinite-Networker/Cherry-Social" target="_blank" class="btn btn-primary">
+              <i class="fab fa-github"></i> GitHub Repo
+            </a>
+            <a href="https://github.com/Infinite-Networker/Cherry-Social/blob/main/LICENSE" target="_blank" class="btn btn-outline">
+              <i class="fas fa-file-contract"></i> MIT License
+            </a>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-card-logo">
+              <img src="assets/images/cherry-social-logo.png" alt="Cherry-Social" />
+            </div>
+            <h3>Cherry-Social v1.0</h3>
+            <p>Developer Social Platform</p>
+            <div class="about-card-stats">
+              <div class="ac-stat"><i class="fas fa-code"></i> Open Source</div>
+              <div class="ac-stat"><i class="fas fa-globe"></i> Web Platform</div>
+              <div class="ac-stat"><i class="fas fa-lock"></i> Privacy First</div>
+              <div class="ac-stat"><i class="fas fa-bolt"></i> High Performance</div>
+            </div>
+            <div class="about-card-footer">
+              <span>© 2024 Cherry Computer Ltd.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/images/cherry-social-logo.png" alt="Cherry-Social" class="footer-logo-img" />
+            <span>Cherry<span class="accent">Social</span></span>
+          </div>
+          <p>A developer social platform built with ❤️ by Cherry Computer Ltd.</p>
+          <div class="footer-social">
+            <a href="https://github.com/Infinite-Networker/Cherry-Social" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-group">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tech">Tech Stack</a></li>
+            <li><a href="#get-started">Get Started</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Repository</h4>
+          <ul>
+            <li><a href="https://github.com/Infinite-Networker/Cherry-Social" target="_blank">Source Code</a></li>
+            <li><a href="https://github.com/Infinite-Networker/Cherry-Social/releases" target="_blank">Releases</a></li>
+            <li><a href="https://github.com/Infinite-Networker/Cherry-Social/issues" target="_blank">Issues</a></li>
+            <li><a href="https://github.com/Infinite-Networker/Cherry-Social/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Cherry Computer Ltd.</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://github.com/Infinite-Networker/Cherry-Social/blob/main/LICENSE" target="_blank">License</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-badges">
+          <img src="https://img.shields.io/badge/Made_with-❤️-dc143c?style=flat-square" alt="Made with love" />
+          <img src="https://img.shields.io/badge/© 2024-Cherry_Computer_Ltd.-a855f7?style=flat-square" alt="Cherry Computer Ltd." />
+          <img src="https://img.shields.io/badge/License-MIT-22c55e?style=flat-square" alt="MIT" />
+        </div>
+        <p class="footer-copy">© 2024 <strong>Cherry Computer Ltd.</strong> — All rights reserved. Cherry-Social is open source under the MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
